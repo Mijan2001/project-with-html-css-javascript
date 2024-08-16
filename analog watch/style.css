@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+img {
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60px;
+}
+
+.clock {
+    position: relative;
+    background-color: lightgray;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border: 2px solid rgb(167, 166, 170);
+    z-index: 2;
+}
+
+.numbers div {
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    color: lightgoldenrodyellow;
+}
+
+.twelve {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.three {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.six {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.nine {
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.arrows {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.arrows::before {
+    content: '';
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 200;
+}
+
+/* .hour {
+    content: '';
+    position: absolute;
+    width: 80px;
+    background-color: rgb(219, 113, 14);
+    height: 5px;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.minute {
+    content: '';
+    position: absolute;
+    width: 80px;
+    background-color: rgb(255, 251, 6);
+    height: 4px;
+    z-index: 100;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.second {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.arrows div {
+    width: 7px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.arrows .hour {
+    height: 80px;
+    transform: rotate(45deg);
+    z-index: 1;
+    background-color: rgb(245, 59, 59);
+}
+
+.arrows .minute {
+    height: 100px;
+    transform: rotate(120deg);
+    z-index: 2;
+    background-color: rgb(245, 238, 143);
+}
+.arrows .second {
+    height: 130px;
+    transform: rotate(10deg);
+    z-index: 3;
+    background-color: lightgoldenrodyellow;
+}
