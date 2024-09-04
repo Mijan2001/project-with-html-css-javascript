@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Testimonial Slider Project</title>
+        <!-- google font link  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- css link  -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="contentSection">
+                <h1>Tip Calculat</h1>
+                <p>
+                    Enter the bill amount and tip percentage to calculate the
+                    total.
+                </p>
+                <form action="">
+                    <div>
+                        <label for="bill-amount">Bill Amount:</label>
+                        <input
+                            id="billValue"
+                            type="number"
+                            name="bill-amount"
+                            id=""
+                        />
+                    </div>
+                    <div>
+                        <label for="tip-percentage">Tip Percentage:</label>
+                        <input
+                            id="tipValue"
+                            type="number"
+                            name="tip-percentage"
+                            id=""
+                        />
+                    </div>
+                    <div>
+                        <button id="btn" class="btn">CALCULATE</button>
+                    </div>
+                    <div class="total" id="totalValue">Total :</div>
+                </form>
+            </div>
+        </div>
+        <!-- javascript link  -->
+        <script src="./index.js"></script>
+    </body>
+</html>
